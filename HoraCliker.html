@@ -26,6 +26,7 @@
 
         .button-inner {
             transition: transform 0.1s ease;
+            outline: none;
         }
 
         .button-cash:active .button-inner {
@@ -43,7 +44,8 @@
 
         .button-cash {
         position: absolute;
-        top: 50%;
+        outline: none;
+        top: 55%;
         left: 50%;
         transform: translate( -50%, -50%);
         }
@@ -56,7 +58,7 @@
 
         .clik{
             position: absolute;
-            top: 5.4%;
+            top: 45px;
             left: 0;
             width: 100%;
             text-align: center;
@@ -68,7 +70,7 @@
 
         .you-chek {
             position: absolute;
-            top: 3.5%;
+            top: 20px;
             width: 100%;
             left: 0;
             text-align: center;
@@ -78,7 +80,7 @@
 
         .Chek-img {
             position: absolute;
-            top: 6.89%;
+            top: 63px;
             left: calc(50% + 70px);
             width: 30px;
         }
@@ -87,12 +89,14 @@
             position: absolute;
             outline: none;
             transform: translateX(-150px);
-            top: 13%;
+            top: 170px;
             left: 50%;
             height: 90px;
             width: 90px;
             border-radius: 20%;
+            will-change: transform;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -115,12 +119,14 @@
             position: absolute;
             outline: none;
             transform: translateX(-50%);
-            top: 13%;
+            top: 170px;
             left: 50%;
             height: 90px;
             width: 90px;
             border-radius: 20%;
+            will-change: transform;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -143,12 +149,14 @@
             position: absolute;
             outline: none;
             transform: translateX(60px);
-            top: 13%;
+            top: 170px;
             left: 50%;
             height: 90px;
             width: 90px;
             border-radius: 20%;
+            will-change: transform;
             cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -196,7 +204,7 @@
         </button>
 
         <button class="button-upgrader">
-            <img style="height: 60px;" src="https://cdn-icons-png.flaticon.com/128/8718/8718771.png" alt="upgrader">
+            <img style="height: 60px;  pointer-events: none;" src="https://cdn-icons-png.flaticon.com/128/8718/8718771.png" alt="upgrader">
         </button>
 
     <script>
